@@ -1,0 +1,69 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> chai site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+     <div id="container">
+     <header>
+        <h1>How to make authentic chai </h1>
+        <img src= "https://i.imgur.com/JGpw6Ql.jpg">
+        <p>Delicious, authentic chai, passed down from my great-great grandmother. Spicy and sweet and absolutely wonderful!</p>
+    </header>
+    <section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+        <h2>ingredients
+        <i class="fa fa-coffee" aria-hidden="true"></i>
+        </h2>
+        <ul>
+            <li>5–7 green cardamom pods</li>
+            <li>1–2 star anise ( optional )</li>
+          <li>5–7 peppercorns ( optional)</li>
+          <li>1 cup of water</li>
+          <li>2–3 slices ginger ( skins ok)</li>
+          <li>½ cinnamon stick- split lengthwise ( use your fingers to separate)</li>
+          <li>2 tablespoons black tea, loose leaf ( or 1–2 tea bags) Or sub decaf black tea</li>
+          <li>1 cup milk of your choice- almond, oat, soy, cashew, hemp, macadamia, or organic whole milk ( I like unsweetened, vanilla-flavored almond or oat milk)</li>
+        </ul>
+    </section>
+    <section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
+        <h2>preparation <i class="fa fa-book" aria-hidden="true"></i></h2>
+        <ol>
+         <li>Lightly crush cardamom, cloves, star anise and peppercorns, and place in a small pot with 1 cup of water. Add ginger, cinnamon and black tea. I like to muddle the ginger a bit.</li>
+         <li>Bring to a boil. Turn off heat and let seep 10 minutes…. or for several hours. The longer, the more flavor.</li>
+          <li>Add milk. Bring to a simmer once more, turn off the heat.</li>
+           <li>Sweeten, taste, strain into a glass.</li>
+            <li>Feel the love. xoxo</li>
+       </ol>
+    </section>
+    <footer>
+        <p>Copyright Me 2019</p>
+    </footer>
+    <script src="index.js"></script>
+    </div>
+  <script>
+        function ingredientsHover(ingredients) {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function ingredientsNormal(ingredients) {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '100%';
+            // document.write("Normal");  
+        }
+
+
+        function preparationHover(preparation) {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function preparationNormal(preparation) {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '100%';
+        }
+    </script>
+  </body>
+</html>
